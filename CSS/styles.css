@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #A5EDFE;
+    color: black;
+    padding: 20px 20px 0px 20px ;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #A5EDFE;
+	
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+	
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Section */
+#portfolio {
+    text-align: center;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+form input, form textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablet view (iPad, etc.) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%; /* Make both parts take full width */
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block; /* Display navigation items in a block for better readability */
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile view (iPhone, smaller devices) */
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px; /* Reduce heading size on mobile */
+    }
+
+    .service-item, .portfolio-item {
+        flex: 1 1 100%; /* Make services and portfolio items take full width on small screens */
+    }
+
+    form input, form textarea {
+        width: 90%; /* Increase form width for better usability */
+    }
+}
+nav {
+  background-color: #f8f8f8; /* Màu nền của nav */
+  padding: 15px; /* Khoảng cách bên trong nav */
+  border-radius: 15px; /* Bo tròn các góc */
+}
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo 2 phần cách đều nhau */
+    align-items: flex-start; /* Căn chỉnh theo chiều dọc */
+    flex-wrap: wrap; /* Đảm bảo cột sẽ xuống hàng trên thiết bị nhỏ */
+}
+
+.contact-info, .contact-form {
+    flex: 1; /* Mỗi phần sẽ chiếm khoảng không gian đều nhau */
+    min-width: 300px; /* Đảm bảo mỗi cột không quá nhỏ */
+    margin: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333;
+    font-weight: 500;
+}
+
+form input, form textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%; /* Đảm bảo form chiếm đủ không gian trong cột */
+    max-width: 500px; /* Giới hạn chiều rộng tối đa */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#about {
+    padding: 40px 20px 0px 0px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between; /* Căn đều hai phần */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    flex-wrap: wrap; /* Đảm bảo xuống hàng trên màn hình nhỏ */
+    text-align: left; /* Căn văn bản bên phải sang trái */
+}
+
+.about-image, .about-info {
+    flex: 1; /* Mỗi phần sẽ chiếm không gian đều nhau */
+    min-width: 300px; /* Đảm bảo không quá nhỏ trên màn hình nhỏ */
+    margin: 0px;
+}
+
+.about-image img {
+    max-width: 60%; /* Đảm bảo hình ảnh không vượt quá khung */
+    height: auto; /* Giữ nguyên tỉ lệ của hình ảnh */
+    
+}
+
+.about-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+/* Portfolio buttons styling */
+.btn-portfolio {
+    background-color: #f0f0f0; /* Màu nền mặc định */
+    border: none;              /* Không viền */
+    padding: 15px 20px;        /* Khoảng cách bên trong */
+    font-size: 16px;           /* Cỡ chữ */
+    border-radius: 10%;        /* Bo tròn góc 10% */
+    cursor: pointer;           /* Con trỏ chuột khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+    width: 30%;                /* Chiều rộng cố định cho nút */
+    text-align: center;        /* Canh giữa nội dung nút */
+}
+
+/* Thay đổi màu khi di chuột */
+.btn-portfolio:hover {
+    background-color: #A5EDFE; /* Màu khi di chuột */
+    color: #fff;               /* Đổi màu chữ khi hover */
+}
+
+/* Thay đổi màu khi click */
+.btn-portfolio:active {
+    background-color: #A5EDFE; /* Màu khi click */
+    color: #fff;
+}
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Căn đều không gian giữa ảnh và văn bản */
+}
+
+.about-image {
+    flex: 1; /* Giúp phần hình ảnh và văn bản chia đều không gian */
+    max-width: 50%; /* Đảm bảo ảnh không vượt quá 50% chiều rộng */
+    height: auto; /* Đảm bảo ảnh giữ tỷ lệ khi mở rộng */
+}
+
+.about-image img {
+    width: 50%; /* Đặt chiều rộng của hình ảnh theo khung */
+    height: auto; /* Giữ tỉ lệ của ảnh */
+    object-fit: contain; /* Đảm bảo ảnh giữ tỉ lệ mà không bị méo */
+}
+
+.about-info {
+    flex: 1; /* Giúp phần văn bản chiếm không gian tương tự phần hình ảnh */
+    padding-left: 20px; /* Tạo khoảng cách giữa ảnh và văn bản */
+}.service-item {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* Chiều cao cố định của mỗi khối service-item */
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px; /* Chiều cao cố định của ảnh */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.service-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* Portfolio Section */
+#portfolio {
+    text-align: center;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px; /* Bo tròn các góc với kích thước mới */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: black; /* Đổi màu chữ thành đen */
+    text-align: center; /* Canh giữa nội dung */
+}
+
+/* Portfolio buttons styling */
+.btn-portfolio {
+    background-color: #f0f0f0; /* Màu nền mặc định */
+    border: none;              /* Không viền */
+    padding: 15px 20px;        /* Khoảng cách bên trong */
+    font-size: 16px;           /* Cỡ chữ */
+    border-radius: 5px;        /* Bo tròn góc 5px */
+    cursor: pointer;           /* Con trỏ chuột khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+    width: 30%;                /* Chiều rộng cố định cho nút */
+    text-align: center;        /* Canh giữa nội dung nút */
+}
+
+/* Thay đổi màu khi di chuột */
+.btn-portfolio:hover {
+    background-color: #A5EDFE; /* Màu khi di chuột */
+    color: #fff;               /* Đổi màu chữ khi hover */
+}
+
+/* Thay đổi màu khi click */
+.btn-portfolio:active {
+    background-color: #A5EDFE; /* Màu khi click */
+    color: #fff;
+}
+.service-item:hover {
+    background-color: #A5EDFE; /* Màu khi di chuột */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+.service-item:hover {
+    background-color: #A5EDFE; /* Màu khi di chuột */
+    color: #fff; /* Đổi màu chữ thành trắng */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}

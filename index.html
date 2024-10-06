@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><strong>MY PORTFOLIO&nbsp;</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <!-- Dropdown Menu for Services -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SERVICES&nbsp; 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#service1">Therapeutic Consultation</a>
+                        <a class="dropdown-item" href="#service2">Developmental Assessments</a>
+                        <a class="dropdown-item" href="#service3">Graphic Design</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1 class="text-uppercase"><strong>Hi, I'm Elton</strong></h1>
+            <p class="text-uppercase">This Is My Personal Portfolio</p>
+        </div>
+        <div class="hero-image">
+            <img src="My Photo/khenkhen.jpg" alt="My Photo">
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="about-container d-flex flex-column flex-md-row align-items-start">
+        <!-- Left Column: Image -->
+        <div class="about-image text-left">
+            <img src="My Photo/khenkhen2.jpg" alt="My Photo" style="max-width: 100%; height: auto;">
+        </div>
+        <!-- Right Column: Information -->
+        <div class="about-info mt-4 mt-md-0 ml-md-4 text-justify">
+            <!-- Right-aligned Title -->
+            <h2 class="text-uppercase text-right"><strong>About Me</strong></h2>
+            <p>I have obtained a Bachelor's degree in Psychology, focusing on therapeutic interventions. Throughout my career, I’ve worked extensively at various intervention centers specifically designed to help children with autism. This immersive experience has given me not only a deeper understanding of how developmental disorders impact both children and their families, but also equipped me with practical therapeutic skills to help these children improve their daily lives.</p>
+            <p>On top of that, my passion for creativity led me to complete SEM1 at Arena Multimedia, where I developed strong expertise in graphic design. My training here has allowed me to blend two seemingly different worlds—psychology and design—into a unique skill set. This dual background means I can approach projects with both a creative and empathetic mindset, whether I’m developing visual materials or addressing more personal, therapeutic needs.</p>
+            <p>By combining the analytical rigor of psychology with the innovative potential of design, I believe I am uniquely positioned to create solutions that are not only visually appealing but also deeply meaningful and supportive for individuals seeking both therapeutic and artistic engagement.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2 class="text-uppercase"><strong>Services</strong></h2>
+<div class="service-container d-flex justify-content-between">
+      <!-- Service 1 -->
+      <div class="service-item text-center">
+          <img src="My Photo/service1.jpg" alt="Therapeutic Consultation" style="max-width: 100%; height: auto;">
+          <p>Therapeutic Consultation</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="service-item text-center">
+          <img src="My Photo/service2.jpg" alt="Developmental Assessments" style="max-width: 100%; height: auto;">
+          <p>Developmental Assessments</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="service-item text-center">
+          <img src="My Photo/service3.jpg" alt="Graphic Design" style="max-width: 100%; height: auto;">
+          <p>Graphic Design</p>
+      </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <h2 class="text-uppercase"><strong>My Work</strong></h2>
+    <div class="portfolio-container d-flex justify-content-between">
+        <button class="portfolio-item btn-portfolio">"Nguyện" Charity Club</button>
+      <button class="portfolio-item btn-portfolio">The Mediating Role of Basic Psychological Need Satisfaction in the Relationship Between Pet Attachment and Mental Health</button>
+      <button class="portfolio-item btn-portfolio">Need for Belonging, Relationship Satisfaction, Loneliness, and Life Satisfaction</button>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2 class="text-uppercase"><strong>Contact Me</strong></h2>
+    <div class="contact-container d-flex justify-content-between">
+        <!-- Personal Information -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> elton07101997@example.com</p>
+            <p><strong>Phone:</strong> (+84) 0902653450</p>
+            <p>Feel free to reach out to me if you have any questions or need assistance. I'm always happy to help!</p>
+        </div>
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Elton. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
